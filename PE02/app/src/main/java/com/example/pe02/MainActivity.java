@@ -50,12 +50,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "Delete Error", Toast.LENGTH_LONG).show();
         }
     }
-//    ContentValues values = new ContentValues();
-//            values.put(MyProvider.id, ((EditText) findViewById(R.id.txtId)).getText().toString());
-//            values.put(MyProvider.name, ((EditText) findViewById(R.id.txtId)).getText().toString());
-//            values.put(MyProvider.price, ((EditText) findViewById(R.id.txtPrice)).getText().toString());
-//    getContentResolver().update(MyProvider.CONTENT_URI, values, "id = " + ((EditText) findViewById(R.id.txtId)).getText().toString(),null);
-//            Toast.makeText(getBaseContext(), "Update Successfully", Toast.LENGTH_LONG).show();
+
     public void onClickUpdate(View view) {
         try{
 //            getContentResolver().delete(MyProvider.CONTENT_URI, "id = " + ((EditText) findViewById(R.id.txtId)).getText().toString(), null);
@@ -72,32 +67,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "Update Error", Toast.LENGTH_LONG).show();
         }
     }
-//    public void onClickShow(View view) {
-//        try{
-//            TextView resultView = (TextView) findViewById(R.id.res);
-//            Cursor cursor = getContentResolver()
-//                    .query(MyProvider.CONTENT_URI,
-//                            null, null, null, null);
-//            if (cursor != null && cursor.moveToFirst()) {
-//                StringBuilder strBuild = new StringBuilder();
-//                while (!cursor.isAfterLast()) {
-//                    strBuild.append("\n" +
-//                            cursor.getString(cursor.getColumnIndex("id")) + "-" +
-//                            cursor.getString(cursor.getColumnIndex("name")) + "-" +
-//                            cursor.getString(cursor.getColumnIndex("price")));
-//                    cursor.moveToNext();
-//                }
-//                resultView.setText(strBuild);
-//            }
-//            else {
-//                resultView.setText("No Records Found");
-//            }
-//        }
-//        catch (Exception e) {
-//            Log.e("Show", e.getMessage());
-//            Toast.makeText(getBaseContext(), "Show Error", Toast.LENGTH_LONG).show();
-//        }
-//    }
+
     public void onClickShow(View view) {
         try{
             TextView resultView = (TextView) findViewById(R.id.res);
